@@ -14,6 +14,7 @@
 		B5DBEF8F26BFF74500C4F1D3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DBEF8E26BFF74500C4F1D3 /* MainView.swift */; };
 		B5DBEF9126BFF77500C4F1D3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DBEF9026BFF77500C4F1D3 /* MainViewController.swift */; };
 		B5DBEF9326BFFAE500C4F1D3 /* SearchAdressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DBEF9226BFFAE500C4F1D3 /* SearchAdressView.swift */; };
+		B5DBEF9526C009B900C4F1D3 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DBEF9426C009B900C4F1D3 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B5DBEF8E26BFF74500C4F1D3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B5DBEF9026BFF77500C4F1D3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B5DBEF9226BFFAE500C4F1D3 /* SearchAdressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAdressView.swift; sourceTree = "<group>"; };
+		B5DBEF9426C009B900C4F1D3 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B5DBEF8E26BFF74500C4F1D3 /* MainView.swift */,
 				B5DBEF9226BFFAE500C4F1D3 /* SearchAdressView.swift */,
 				B5DBEF9026BFF77500C4F1D3 /* MainViewController.swift */,
+				B5DBEF9426C009B900C4F1D3 /* Alert.swift */,
 				B5DBEF8326BFF63A00C4F1D3 /* Assets.xcassets */,
 				B5DBEF8526BFF63A00C4F1D3 /* LaunchScreen.storyboard */,
 				B5DBEF8826BFF63A00C4F1D3 /* Info.plist */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DBEF9526C009B900C4F1D3 /* Alert.swift in Sources */,
 				B5DBEF7B26BFF63800C4F1D3 /* AppDelegate.swift in Sources */,
 				B5DBEF7D26BFF63800C4F1D3 /* SceneDelegate.swift in Sources */,
 				B5DBEF9326BFFAE500C4F1D3 /* SearchAdressView.swift in Sources */,

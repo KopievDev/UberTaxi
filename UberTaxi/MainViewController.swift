@@ -15,6 +15,9 @@ class MainViewController: UIViewController {
         return view
     }()
     
+    var firstAdress: String?
+    var secondAdress: String?
+    
     // MARK: - Lifecycle
     override func loadView() {
         super.loadView()
@@ -34,11 +37,12 @@ class MainViewController: UIViewController {
 extension MainViewController: SearchAdressDelegate {
     func wasEnteredFirst(adress: String) {
          print("first adress = \(adress)")
+        firstAdress = adress
     }
     
     func wasEnteredSecond(adress: String) {
         print("second adress = \(adress)")
-
+        secondAdress = adress
     }
     
     func didTapButton() {
@@ -50,6 +54,9 @@ extension MainViewController: SearchAdressDelegate {
 extension MainViewController: MainViewDelegate {
     func didTapResetButton() {
         print("Reset Button presed")
+        showAlert(with: "Eroror", message: "reset tapped") { _ in
+            print("Uraaa")
+        }
     }
 }
 
