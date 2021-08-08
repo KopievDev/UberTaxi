@@ -109,4 +109,9 @@ extension SearchAdressView: UITextFieldDelegate {
         }
         
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        endEditing(true)
+        return true
+    }
 }
