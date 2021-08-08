@@ -11,6 +11,7 @@ class MainViewController: UIViewController {
     lazy var mainView: MainView = {
         let view = MainView(frame: self.view.frame)
         view.findPanel.delegate = self
+        view.delegate = self
         return view
     }()
     
@@ -45,3 +46,10 @@ extension MainViewController: SearchAdressDelegate {
     }
     
 }
+
+extension MainViewController: MainViewDelegate {
+    func didTapResetButton() {
+        print("Reset Button presed")
+    }
+}
+

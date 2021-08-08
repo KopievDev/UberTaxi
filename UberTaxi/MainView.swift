@@ -8,11 +8,14 @@
 import UIKit
 import MapKit
 import CoreLocation
+protocol MainViewDelegate: AnyObject {
+    func didTapResetButton()
+}
 
 class MainView: UIView {
     //MARK: - Properies
     let mapView = MKMapView()
-    
+    weak var delegate: MainViewDelegate?
     let findPanel: SearchAdressView = {
         let panel = SearchAdressView()
         panel.translatesAutoresizingMaskIntoConstraints = false
@@ -27,6 +30,7 @@ class MainView: UIView {
         button.backgroundColor = .white
         button.setTitleColor(.black, for: .normal)
         button.layer.cornerRadius = 16
+        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         return button
     }()
     // MARK: - Lifecycle
@@ -62,6 +66,11 @@ class MainView: UIView {
             resetButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)
         
         ])
+    }
+    // MARK: - Selectors
+    
+    @objc func didTapButton() {
+        delegate?.didTapResetButton()
     }
 }
 
