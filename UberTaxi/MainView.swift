@@ -22,8 +22,11 @@ class MainView: UIView {
     let resetButton: UIButton = {
        let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setImage(UIImage(systemName: "xmark.circle.fill"), for: .normal)
-        button.imageView?.tintColor = .black
+        button.setTitle("Сбросить маршрут", for: .normal)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 20)
+        button.backgroundColor = .white
+        button.setTitleColor(.black, for: .normal)
+        button.layer.cornerRadius = 16
         return button
     }()
     // MARK: - Lifecycle
@@ -55,9 +58,8 @@ class MainView: UIView {
             
             resetButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             resetButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -20),
-            resetButton.heightAnchor.constraint(equalToConstant: 80),
-            resetButton.widthAnchor.constraint(equalTo: resetButton.heightAnchor)
-
+            resetButton.heightAnchor.constraint(equalToConstant: 60),
+            resetButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)
         
         ])
     }
