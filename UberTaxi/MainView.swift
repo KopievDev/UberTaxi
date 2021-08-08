@@ -7,7 +7,7 @@
 
 import UIKit
 import MapKit
-import CoreLocation
+
 protocol MainViewDelegate: AnyObject {
     func didTapResetButton()
 }
